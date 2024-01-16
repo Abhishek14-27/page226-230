@@ -1,0 +1,235 @@
+<html>
+    <head>
+         <link rel="stylesheet" href="style.css">
+       
+        <h3 id="heading">226-230</h3>
+        <body>
+             <p>Wang & Oppenheim</p>
+            <div class= "textint">determining the probability that the relationships occurred at random or whether the
+anomaly may be unique to the specific sample that was tested. Statisticians are fond of
+pointing out that if you torture the data long enough, it will confess to anything
+(McQueen & Thorley, 1999).
+            </div>
+           <div>
+                In describing the pitfalls of DM, Leinweber “sifted through a United Nations CDROM and discovered that, historically, the single-best predictor of the Standard & Poor’s
+500-stock index was butter production in Bangladesh.” The lesson to learn here is that
+a “formula that happens to fit the data of the past won’t necessarily have any predictive
+value” (Investor Home, 1999). The “random walk theory” of stock prices suggests that
+securities prices cannot be forecasted. Successful investment strategies—even those
+that have been successful for many years—may turn out to be fool’s gold rather than
+a golden chalice.
+            </div>
+             <div>
+            Given a finite amount of historical data and an infinite number of complex models,
+uninformed investors may be lured into “overfitting” the data. Patterns that are assumed
+to be systematic may actually be sample-specific and therefore of no value (Montana,
+2001). When people search through enough data, the data can be tailored to back any
+theory. The vast majority of the things that people discover by taking standard
+                  mathematical tools and sifting through a vast amount of data are statistical artifacts.  </div>
+            <br><br>
+            
+            <b>Explanatory Factors vs. Random Variables</b>
+            <div>The variables used in DM need to be more than variables; they need to be
+explanatory factors. If the factors are fundamentally sound, there is a greater chance the
+DM will prove to be more fruitful. We might review the relationship in several, distinct
+time periods. A common mistake made by those inexperienced in DM is to do “data
+dredging,” that is, simply attempting to find associations, patterns, and trends in the data
+by using various DM tools without any prior analysis and preparation of the data. Using
+<i>multiple comparison procedures</i> indicates that data can be twisted to indicate a trend
+if the user feels so inclined (Jensen, 1999). Those who do “data dredging” are likely to
+find patterns that are common in the data, but are less likely to find patterns that are rare
+events, such as fraud.</div>
+           <div>
+            An old saw that may fit in the analysis of DM is “garbage in, garbage out.” One of
+the quirks of statistical analysis is that one may be able to find a factor that seems very
+highly correlated with the dependent variable during a specific time period, but such a
+relationship turns out to be spurious when tested in other time periods. Such spurious
+correlations produce the iron pyrite (“fool’s gold”) of DM. However, even when
+adjustments are made for excessive collinearity by removing less explanatory, co-linear
+variables from the model, many such models have trouble withstanding the test of time
+(Dietterich, 1999). Just as gold is difficult to detect in the ground because it is a rare and
+precious metal, so too are low-incidence occurrences such as fraud. The person mining
+has to know where to search and what signs to look for to discover fraudulent practice,
+which is where data analysis comes in.</div>
+            <div>
+            Statistical inference “has a great deal to offer in evaluating hypotheses in the
+search, in evaluating the results of the search and in applying the results” (Numerical
+Machine Learning, 1997). Any correlation found through statistical inference might be
+considered completely random and therefore not meaningful. Even worse, “variables not included in a dataset may obscure relationships enough to make the effect of a variable
+appear the opposite from the truth” (Numerical Machine Learning, 1997). Furthermore,
+other research indicates that on large datasets with multiple variables, results using
+statistics can become overwhelming and therefore be the cause of difficulty in interpreting results.</div>
+           <div>
+            Hypothesis testing is a respectable and sometimes valuable tool to assess the
+results of experiments. However, it too has difficulties. For example, there may be a
+problem with the asymmetry in the treatment of the null and alternative hypotheses,
+which will control the probability of Type I errors, but the probability of Type II errors
+may have to be largely guessed (Berger & Berry, 1988). In practice, the approach is not
+followed literally—common sense prevails. Rather than setting an α in advance and then
+acting accordingly, most researchers tend to treat the <i>p</i>-value obtained for their data as
+a kind of standardized descriptive statistic. They report these <i>p</i>-values, and then let
+others draw their own conclusions; such conclusions will often be that further experiments are needed. The problem then is that there is no standard approach to arriving at
+a final conclusion. Perhaps this is how it should be, but this means that statistical tests
+are used as a component in a slightly ill-defined mechanism for accumulating evidence,
+rather than in the tidy cut-and-dried way that their inventors were trying to establish. The
+rejection/acceptance paradigm also leads to the problem of biased reporting. Usually,
+positive results are much more exciting than negative ones, and so it is tempting to use
+low <i>p</i>-values as a criterion for publications of results. Despite these difficulties, those
+who seek rigorous analysis of experimental results will often want to see <i>p</i>-values, and
+provided its limitations are borne in mind, the hypothesis testing methodology can be
+applied in useful and effective ways.</div>
+            
+            <br><br>
+            <b>Segmentation vs. Sampling</b>
+            <div>Segmentation is an inherently different task from sampling. As a segment, we
+deliberately focus on a subset of data, sharpening the focus of the analysis. But when
+we sample data, we lose information because we throw away data not knowing what to
+keep and what to ignore. Sampling will almost always result in a loss of information, in
+particular with respect to data fields with a large number of non-numeric values.</div>
+            <div>
+            Most of the time it does not make sense to analyze all of variables from a large dataset
+because patterns are lost through dilution. To find useful patterns in a large data
+warehouse, we usually have to select a segment (and not a sample) of data that fits a
+business objective, prepare it for analysis, and then perform DM. Looking at all of the
+data at once often hides the patterns, because the factors that apply to distinct business
+objectives often dilute each other.</div>
+            <div>While sampling may seem to offer a short cut to faster data analysis, the end results
+are often less than desirable. Sampling was used within statistics because it was so
+difficult to have access to an entire population. Sampling methods were developed to
+allow for some rough calculations about some of the characteristics of the population
+without access to the entire population. This contradicts having a large DB. We build
+DBs of a huge customer’s behavior exactly for the purpose of having access to the entire
+population. Sampling a large warehouse for analysis almost defeats the purpose of
+having all the data in the first place (Data Mines for Data Warehouses, 2001).</div>
+            <div>
+            In discussing some pitfalls of DM, the issue of how to avoid them deserves mention.
+There are unique statistical challenges produced by searching a space of models and
+evaluating model quality based on a single data sample. Work in statistics on <i>specification searches</i> and <i>multiple comparisons</i> has long explored the implications of DM,
+and statisticians have also developed several adjustments to account for the effects of
+search. Work in machine learning and knowledge discovery related to <i>overfilling</i> and
+<i>oversearching</i> has also explored similar themes, and researchers in these fields have also
+developed techniques such as <i>pruning</i> and <i>minimum description length encoding</i> to
+adjust for the effects of the search (Jensen, 1999). However, this “dark side” of DM is
+still largely unknown to some practitioners, and problems such as <i>overfilling</i> and
+<i>overestimation</i> of accuracy still arise in knowledge discovery applications with surprising regularity. In addition, the statistical effects of the search can be quite subtle, and
+they can trip up even experienced researchers and practitioners.</div>
+            <div>
+            A very common approach is to obtain new data or to divide an existing sample into
+two or more subsamples, using one subsample to select a small number of models and
+other subsamples to obtain unbiased scores. <i>Cross-validation</i> is a related approach that
+can be used when the process for identifying a “best” model is algorithmic. Sometimes,
+<i>incremental induction</i> is efficient (Hand, Mannila, & Smyth, 2001). A model is developed
+on a small data sample and, while suggestive of an interesting relationship, it does not
+exceed a prespecified critical value. Another small sample of data becomes available later,
+but it is also too small to confer statistical significance to the model. However, the
+relationship would be significant if considered in the context of both data samples
+together. This indicates the importance of maintaining both tentative models and links
+to the original data (Jensen, 2001).</div>
+            <div>
+            Several relatively simple mathematical adjustments can be made to statistical
+significance tests to correct for the effects of multiple comparisons. These have been
+explored in detail within the statistical literature on experimental design. Unfortunately,
+the assumptions of these adjustments are often restrictive. Many of the most successful
+approaches are based on computationally intensive techniques such as <i>randomization</i>
+and <i>resampling</i> (Saarenvirta, 1999). <i>Randomization</i> tests have been employed in several
+knowledge discovery algorithms. Serious statistical problems are introduced by searching large model spaces, and unwary analysts and researchers can still fall prey to these
+pitfalls.</div> <br><br>
+            <b>DATA ACCURACY AND STANDARDIZATION</b>
+            <div>Another important aspect of DM is the accuracy of the data itself. It follows that
+poor data are a leading contributor to the failure of DM. This factor is a major business
+challenge. The emergence of electronic data processing and collection methods has lead
+some to call recent times as the “information age.” However, it may be more accurately
+termed as “analysis paralysis.” Most businesses either posses a large DB or have access
+to one. These DBs contain so much data that it may be quite difficult to understand what
+that data are telling us. Just about all transactions in the market will generate a computer
+record somewhere. All those data have meaning with respect to making better business
+decisions or understanding customer needs and preferences. But discovering those needs and preferences in a DB that contains terabits of seemingly incomprehensible
+numbers and facts is a big challenge (Abbot, 2001).</div>
+            <br><br>
+            <b>Accuracy and Cohesiveness</b>
+            <div>A model is only as good as the variables and data used to create it. Many dimensions
+of this issue apply to DM, the first being the quality and the sources of the data. We
+repeatedly can find that data accuracy is imperative to very crucial functions. Administrative data are not without problems, however. Of primary concern is that, unlike a
+purposeful data collection effort, the coding of data is often not carefully quality
+controlled. Likewise, data objects may not necessarily be defined commonly across DBs
+or in the way a researcher would want. One of the most serious concerns is matching
+records across different DBs in order to build a more detailed individual record. In
+addition, administrative records may not accurately represent the population of interest,
+leading to issues similar to sampling and non-response bias. Transaction records and
+other administrative data are volatile, that is, rapidly changing over time, so that a
+snapshot of information taken at one time may not indicate the same relationships that
+an equivalent snapshot taken at a later time (or using a different set of tables) would
+reveal. Finally, programs and regulations themselves may introduce bias into administrative records, thus making them unreliable over time (Judson, 2000).</div>
+                <div>No matter how huge a company’s datasets may be, freshness and accuracy of the
+data are imperative for successful DM. Many companies have stores of outdated and
+duplicate data, as anyone who has ever received multiple copies of the same catalog can
+attest. Before a company can even consider what DM can do for business, the data must
+be clean and fresh, up-to-date, and error- and duplication-free. Unfortunately, this is
+easier said than done. Computer systems at many large companies have grown rather
+complicated over the years by encompassing a wide variety of incompatible DBs and
+systems as each division or department bought and installed what they thought was best
+for their needs without any thought of the overall enterprise. This may have been further
+complicated through mergers and acquisitions that may have brought together even
+more varied systems. “Bad data, duplicate data, and inaccurate and incomplete data are
+a stumbling block for many companies” (E-commag, 2001).</div>
+            <div>The first step to achieve proper DM results is to start with the correct raw data. For
+companies to mine their customer transaction data (which sometimes has additional
+demographic information), they can figure out an “ad infinitum” value of revenue for each
+customer. It is clear here that it is very important for companies to get proper data
+accuracy for forecasting functions. Poor data accuracy can lead to the risk of poor pro
+forma financial statements.</div>
+            <div>With accurate data, one should be able to achieve a single customer view. This will
+eliminate multiple counts of the same individual or household within and across an
+enterprise or within a marketing target. Additionally, this will normalize business
+information and data. With an information quality solution, one will be able to build and
+analyze relationships, manage a universal source of information, and make more informed
+business decisions. By implementing an information quality solution across an organization, one can maximize the ROI from CRM, business intelligence, and enterprise
+applications.</div>
+            <div>If dirty, incomplete, and poorly structured data are employed in the mining, the task
+of finding significant patterns in the data will be much harder. The elimination of errors,
+removal of redundancies, and filling of gaps in data (although tedious and timeconsuming tasks), are integral to successful DM (Business Lounge, 2001).</div>
+      <br><br>
+            <b>Standardization and Verification</b>
+            <div>
+            Data in a DB or data store are typically inconsistent and lacking conformity. In some
+cases, there are probably small variations in the way that even the subscriber’s name or
+address appear in a DB. This will lead to the allocation of organizational resources based
+on inaccurate information. This can be a very costly problem for any organization that
+routinely mails against a large customer DB. An added difficulty of getting these correct
+data sources for data accuracy is the large amount of the sources themselves. The number
+of enterprise data sources is growing rapidly, with new types of sources emerging every
+year. The newest source is, of course, enterprise e-business operations. Enterprises
+want to integrate clickstream data from their Web sites with other internal data in order
+to get a complete picture of their customers and integrate internal processes. Other
+sources of valuable data include Enterprise Resource Planning (ERP) programs, operational data stores, packaged and home-grown analytic applications, and existing data
+marts. The process of integrating these sources into one dataset can be complicated and
+is made even more difficult when an enterprise merges with or acquires another
+enterprise.</div>
+            <div>
+            Enterprises also look to a growing number of external sources to supplement their
+internal data. These might include prospect lists, demographic and psychographic data,
+and business profiles purchased from third-party providers (Hoss, 2001). Enterprises
+might also want to use an external provider for help with address verification, where
+internal company sources are compared with a master list to ensure data accuracy.
+Additionally, some industries have their own specific sources of external data. For
+example, the retail industry uses data from store scanners, and the pharmaceutical
+industry uses prescription data that are totaled by an outsourced company.</div>
+            <div>Although data quality issues vary greatly from organization to organization, we can
+discuss these issues more effectively by referring to four basic types of data quality
+categories that affect IT professionals and business analysts on a daily basis. These
+categories —standardization, matching, verification, and enhancement — make up the
+general data quality landscape (Moss, 2000).</div>
+            <div><i>Verification</i> is the process of verifying any other type of data against a known
+correct source. For example, if a company decided to import some data from an outside
+vendor, the U.S. Postal Service DB might be used to make sure that the ZIP codes match
+the addresses and that the addresses were deliverable. If not, the organization could
+potentially wind up with a great deal of undeliverable mail. The same principle would
+apply to verifying any other type of data. Using verification techniques, a company
+ensures that data are correct based on an internal or external data source that has been
+verified and validated as correct.</div>
+            <div><i>Enhancement</i> of data involves the addition of data to an existing data set or actually
+changing the data in some way to make it more useful in the long run.
+</div>
+        </body>
+    </head>
+</html>
